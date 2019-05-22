@@ -3,12 +3,38 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/user/user",
-    "pages/user/address/address"
+    "pages/user/address/address",
+    "pages/order/order"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "backgroundColor": "#f3f2f7",
+    "selectedColor": "red",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon/order.png",
+        "selectedIconPath": "images/icon/order.png"
+      },
+      {
+        "text": "订单",
+        "pagePath": "pages/order/order",
+        "iconPath": "images/icon/order.png",
+        "selectedIconPath": "images/icon/order.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/user/user",
+        "iconPath": "images/icon/user.png",
+        "selectedIconPath": "images/icon/user.png"
+      }
+    ]
   }
 }

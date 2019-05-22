@@ -1,0 +1,5 @@
+<view class="call" bindtap="callPhone">
+  <view class="phone">{{phone}}</view>
+  <view>了解最新信息，免费咨询</view>
+  <view class="callIcon"></view>
+</view>

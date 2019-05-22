@@ -1,0 +1,6 @@
+<!-- <call-phone phone="400-010-9797"></call-phone> -->
+
+<!-- <call-phone data-tel="400-010-9797" ></call-phone> -->
+
+<!--"bindmyevent"属性与上面"myevent"对应，当自定义组件触发"myevent"事件时，调用"call"方法 -->
+<call-phone bindmyevent="call"></call-phone>

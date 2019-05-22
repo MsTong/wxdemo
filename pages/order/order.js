@@ -1,4 +1,4 @@
-// pages/user/user.js
+// pages/order/order.js
 Page({
 
   /**
@@ -7,28 +7,17 @@ Page({
   data: {
 
   },
-  showLogin() {
-    wx.login({
-      success(res) {
-        if (res.code) {
-          // 发起网络请求
-          wx.request({
-            url: 'https://test.com/onLogin',
-            data: {
-              code: res.code
-            }
-          })
-        } else {
-          console.log('登录失败！' + res.errMsg)
-        }
-      }
+  call: function (e) {
+    console.log(e.detail.msg);//控制台打印:"来自component的信息"
+    wx.makePhoneCall({
+      phoneNumber: e.detail.tel
     })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**
